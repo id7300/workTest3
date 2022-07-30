@@ -1,0 +1,284 @@
+/* webフォントのインストールを行います。 */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+header {
+    font-family: 'Amatic SC', cursive;
+}
+
+.header-class div {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    margin: 90px 0px 0 0;
+}
+
+nav {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+    /* background-color: #3CB371; */
+    /* margin: 0px 8px; */
+    width: 100%;
+}
+
+/* わかりやすく表示して、後で消す */
+main {
+    color: rgb(51, 48, 48);
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+    /* background-color: #84d8fa; */
+    margin: 16px;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+}
+
+p,
+dd,
+input {
+    font-size: 16px;
+    color: rgb(112, 110, 110);
+}
+
+/* フッターのデフォルト設定 */
+footer {
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+}
+
+/* ulのpaddingをデフォルトで設定する */
+ul {
+    padding: 0px 8px 0px 8px;
+}
+
+/* リストのデフォルト設定 */
+li {
+    list-style: none;
+}
+
+/* 見出しのデフォルト設定 */
+h1, h2 {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 32px;
+    padding: 32px 16px;
+}
+
+h1 {
+    font-family: monospace;
+    width: 100%;
+    text-align: center;
+    margin: 0px 8px 0px 16px;
+}
+
+section {
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    /* line-height: 16px; */
+    vertical-align: bottom;
+    padding: 0px;
+    margin: 32px 24px 32px 0px;
+}
+
+nav ul li {
+    margin: 8px;
+    font-size: 24px;
+}
+
+nav img {
+    width: 16px;
+    height: 16px;
+    vertical-align: baseline;
+}
+
+nav li :hover {
+    cursor: pointer;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* Aboutの設定 */
+.first-about {
+    margin: 32px 0px;
+}
+
+.about p {
+    padding:  0px 8px 0px 16px;
+    text-align: left;
+}
+
+/* ヘッダー下写真の挙動 */
+.mainvisual img {
+    object-fit: cover;
+    width: 100%;
+    max-height:  400px;
+}
+
+@media (min-width: 600px) {
+header .mainvisual img {
+    object-fit: cover;
+    height: 430px;
+}
+
+    .works ul {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 960px) {
+    body main {
+        width: 960px;
+        margin: 0 auto;
+    }
+    
+    .header-class {
+        max-width: 100%;
+    }
+    
+    .header-list img {
+        max-width: 100%;
+    }
+    
+    .works img {
+        width: 100%;
+    }
+}
+
+.works ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.works ul {
+    padding: 0px;
+}
+
+.works img {
+    max-width: 420px;
+    height: 40vh;
+    margin: 16px;
+    padding: 0px;
+}
+
+section li {
+    text-align: left;
+}
+
+section ul p  {
+    text-align: left;
+    padding-left: 16px;
+}
+
+.news dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news dt {
+    width: 25%;
+    margin-left: 16px;
+    padding: 8px;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.news dd {
+    width: 50%;
+    margin: 0px;
+    padding: 8px 8px 8px 32px;
+    text-align: left;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.contact {
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+.contact-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-table tr {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact th {
+    width: 15%;
+    vertical-align: top;
+    text-align: right;
+}
+
+.contact td {
+    width: 70%;
+    vertical-align: top;
+}
+
+.contact-item,
+.contact-body {
+    padding: 20px;
+}
+
+.contact-item {
+    text-align: left;
+    width: 30%;
+    padding: 8px;
+}
+
+.contact-body {
+    width: 100%;
+    padding: 8px;
+}
+
+.form-text {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 95%;
+}
+
+.form-textarea {
+    width: 90%;
+    padding: 10px;
+    height: 150px;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-submit {
+    width: 200px;
+    max-width: 95%;
+    background-color: rgb(66, 65, 65);
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 16px 8px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
